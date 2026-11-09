@@ -263,26 +263,28 @@
               "threats": [
                 {
                   "id": "38c00443-e549-4be2-9a72-be879c1459ae",
-                  "title": "test",
+                  "title": "Obehörig åtkomst till kunduppgifter",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Confidentiality",
-                  "description": "test123",
-                  "mitigation": "aa",
+                  "description": "Otillräcklig åtkomstkontroll eller för omfattande användarbehörigheter. \nEn angripare kan få tillgång till databasen och kan läsa och kopiera känsliga kunduppgifter. \nDet kan leda till att känsliga användaruppgifter röjs vilket kan påverka kundernas förtroende för verksamheten och eller leda till rättsliga konsekvenser.",
+                  "mitigation": "Inför rollbaserad behörighetsstyrning, tillämpa principen om minsta privilegium och logga åtkomstförsök.",
                   "modelType": "CIA",
                   "new": false,
                   "number": 1,
-                  "score": ""
+                  "score": "12"
                 }
               ],
               "threatFrequency": {
-                "confidentiality": 1,
+                "confidentiality": 2,
                 "integrity": 0,
                 "availability": 0
               }
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
                 "boundary",
                 "button-remove"
               ],
